@@ -32,6 +32,10 @@ public class Calculadora {
 			IO.println("=================");
 			IO.println("======Resta======");
 			IO.println("=================");
+			numero1 = Double.parseDouble(IO.readln("Ingrese el primer numero: "));
+			numero2 = Double.parseDouble(IO.readln("Ingrese el segundo numero: "));
+			respuesta = numero1 - numero2;
+			IO.println("Su respuesta es: " + respuesta);			
 			break;
 			
 		case 3:
