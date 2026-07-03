@@ -25,7 +25,7 @@ public class Calculadora {
 			numero1 = Double.parseDouble(IO.readln("Ingrese el primer numero: "));
 			numero2 = Double.parseDouble(IO.readln("Ingrese el segundo numero: "));
 			respuesta = numero1 + numero2;
-			IO.println("Su respuesta es: " + respuesta);
+			IO.println("La respuesta es: " + respuesta);
 			break;
 			
 		case 2:
@@ -35,13 +35,17 @@ public class Calculadora {
 			numero1 = Double.parseDouble(IO.readln("Ingrese el primer numero: "));
 			numero2 = Double.parseDouble(IO.readln("Ingrese el segundo numero: "));
 			respuesta = numero1 - numero2;
-			IO.println("Su respuesta es: " + respuesta);			
+			IO.println("La respuesta es: " + respuesta);			
 			break;
 			
 		case 3:
 			IO.println("=================");
 			IO.println("==Multiplicación=");
 			IO.println("=================");
+			numero1 = Double.parseDouble(IO.readln("Ingrese el primer numero: "));
+			numero2 = Double.parseDouble(IO.readln("Ingrese el segundo numero: "));
+			respuesta = numero1 * numero2;
+			IO.println("La respuesta es: " + respuesta);
 			break;
 			
 		case 4:
