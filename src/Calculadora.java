@@ -1,0 +1,55 @@
+
+public class Calculadora {
+
+	public static void main(String[] args) {
+	int seleccionador;
+	boolean sistemaEncendido = true;
+	
+	while (sistemaEncendido == true){
+		double numero1, numero2, respuesta;
+		IO.println("=================");
+		IO.println("===Calculadora===");
+		IO.println("=================");
+		IO.println("1. Suma");
+		IO.println("2. Resta");
+		IO.println("3. Multiplicación");
+		IO.println("4. División");
+		IO.println("5. Salir");
+		seleccionador = Integer.parseInt(IO.readln("Seleccione su opción: "));
+		switch (seleccionador) {
+		case 1:
+			IO.println("=================");
+			IO.println("======Suma=======");
+			IO.println("=================");
+			break;
+			
+		case 2:
+			IO.println("=================");
+			IO.println("======Resta======");
+			IO.println("=================");
+			break;
+			
+		case 3:
+			IO.println("=================");
+			IO.println("==Multiplicación=");
+			IO.println("=================");
+			break;
+			
+		case 4:
+			IO.println("=================");
+			IO.println("====División=====");
+			IO.println("=================");
+			break;
+			
+		case 5:
+			IO.println("=================");
+			IO.println("==¡Hasta pronto!=");
+			IO.println("=================");
+			break;
+			
+		}
+		}
+		}
+	}
+
+
