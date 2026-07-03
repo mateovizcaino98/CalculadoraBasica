@@ -52,12 +52,17 @@ public class Calculadora {
 			IO.println("=================");
 			IO.println("====División=====");
 			IO.println("=================");
+			numero1 = Double.parseDouble(IO.readln("Ingrese el primer numero: "));
+			numero2 = Double.parseDouble(IO.readln("Ingrese el segundo numero: "));
+			respuesta = numero1 / numero2;
+			IO.println("La respuesta es: " + respuesta);
 			break;
 			
 		case 5:
 			IO.println("=================");
 			IO.println("==¡Hasta pronto!=");
 			IO.println("=================");
+			sistemaEncendido = false;
 			break;
 			
 		}
