@@ -2,6 +2,7 @@
 public class Calculadora {
 
 	public static void main(String[] args) {
+		
 	int seleccionador;
 	boolean sistemaEncendido = true;
 	
@@ -21,6 +22,10 @@ public class Calculadora {
 			IO.println("=================");
 			IO.println("======Suma=======");
 			IO.println("=================");
+			numero1 = Double.parseDouble(IO.readln("Ingrese el primer numero: "));
+			numero2 = Double.parseDouble(IO.readln("Ingrese el segundo numero: "));
+			respuesta = numero1 + numero2;
+			IO.println("Su respuesta es: " + respuesta);
 			break;
 			
 		case 2:
