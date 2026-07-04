@@ -104,7 +104,22 @@ public class Calculadora {
 			break;
 			
 		case 5:
-			IO.println("Esto es una potenciación");
+			IO.println("=================");
+			IO.println("==Potenciación===");
+			IO.println("=================");
+			numeroValido = false;
+			while (numeroValido == false) {
+			try {
+			numero1 = Double.parseDouble(IO.readln("Ingrese el PRIMER numero: "));
+			numero2 = Double.parseDouble(IO.readln("Ingrese el SEGUNDO numero: "));
+			numeroValido = true;
+			} catch(NumberFormatException error) {
+				IO.println("Opción inválida. Ingrese un número entero o decimal usando el punto (.)");
+			}
+			}
+			respuesta = Math.pow(numero1, numero2);
+			IO.println("La respuesta es: " + respuesta);			
+			break;
 			
 		case 6:
 			IO.println("=================");
@@ -114,7 +129,7 @@ public class Calculadora {
 			break;
 		
 		default:
-			IO.println("Opción inválida. Escoja una de las opciones del menú.");
+			IO.println(String.format("Opción inválida. Elegiste %s, escoja una de las opciones del menú.", seleccionador));
 		}
 		}
 		}
