@@ -16,7 +16,8 @@ public class Calculadora {
 		IO.println("2. Resta");
 		IO.println("3. Multiplicación");
 		IO.println("4. División");
-		IO.println("5. Salir");
+		IO.println("5. Potenciación");
+		IO.println("6. Salir");
 		while(opcionValida == false) {
 		try {
 		seleccionador = Integer.parseInt(IO.readln("Seleccione su opción: "));
@@ -103,6 +104,9 @@ public class Calculadora {
 			break;
 			
 		case 5:
+			IO.println("Esto es una potenciación");
+			
+		case 6:
 			IO.println("=================");
 			IO.println("==¡Hasta pronto!=");
 			IO.println("=================");
