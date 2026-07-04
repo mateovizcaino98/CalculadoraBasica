@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Calculadora"/>
+        <attribute name="authors" value="mateo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-07-02 08:56:20 p. m."/>
+        <attribute name="created" value="bWF0ZW87REVTS1RPUC1NNjFNTkY4OzIwMjYtMDctMDI7MDc6MjY6MzEgcC4gbS47MzA0OA=="/>
+        <attribute name="edited" value="bWF0ZW87REVTS1RPUC1NNjFNTkY4OzIwMjYtMDctMDI7MDg6NTY6MjAgcC4gbS47MTszMTU4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="seleccionador" type="Integer" array="False" size=""/>
+            <declare name="sistemaencendido" type="Boolean" array="False" size=""/>
+            <assign variable="sistemaencendido" expression="true"/>
+            <while expression="sistemaencendido == true">
+                <declare name="numero1, numero2, respuesta" type="Integer" array="False" size=""/>
+                <output expression="&quot;=====Men&#250;=====&quot;" newline="True"/>
+                <output expression="&quot;1. Suma&quot;" newline="True"/>
+                <output expression="&quot;2. Resta&quot;" newline="True"/>
+                <output expression="&quot;3. Multiplicaci&#243;n&quot;" newline="True"/>
+                <output expression="&quot;4. Divisi&#243;n&quot;" newline="True"/>
+                <output expression="&quot;5. Salir&quot;" newline="True"/>
+                <input variable="seleccionador"/>
+                <if expression="seleccionador == 1">
+                    <then>
+                        <output expression="&quot;Ingrese el primer n&#250;mero&quot;" newline="True"/>
+                        <input variable="numero1"/>
+                        <output expression="&quot;Ingrese el segundo n&#250;mero&quot;" newline="True"/>
+                        <input variable="numero2"/>
+                        <assign variable="respuesta" expression="numero1 + numero2"/>
+                        <output expression="&quot;La respuesta es &quot;&amp;respuesta" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="seleccionador == 2">
+                    <then>
+                        <output expression="&quot;Ingrese el primer n&#250;mero&quot;" newline="True"/>
+                        <input variable="numero1"/>
+                        <output expression="&quot;Ingrese el segundo n&#250;mero&quot;" newline="True"/>
+                        <input variable="numero2"/>
+                        <assign variable="respuesta" expression="numero1 - numero2"/>
+                        <output expression="&quot;La respuesta es &quot;&amp;respuesta" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="seleccionador == 3">
+                    <then>
+                        <output expression="&quot;Ingrese el primer n&#250;mero&quot;" newline="True"/>
+                        <input variable="numero1"/>
+                        <output expression="&quot;Ingrese el segundo n&#250;mero&quot;" newline="True"/>
+                        <input variable="numero2"/>
+                        <assign variable="respuesta" expression="numero1 * numero2"/>
+                        <output expression="&quot;La respuesta es &quot;&amp;respuesta" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="seleccionador == 4">
+                    <then>
+                        <output expression="&quot;Ingrese el primer n&#250;mero&quot;" newline="True"/>
+                        <input variable="numero1"/>
+                        <output expression="&quot;Ingrese el segundo n&#250;mero&quot;" newline="True"/>
+                        <input variable="numero2"/>
+                        <assign variable="respuesta" expression="numero1 / numero2"/>
+                        <output expression="&quot;La respuesta es &quot;&amp;respuesta" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="seleccionador == 5">
+                    <then>
+                        <assign variable="sistemaencendido" expression="false"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="seleccionador &lt;&gt; 1 AND seleccionador &lt;&gt; 2 AND seleccionador  &lt;&gt; 3 AND seleccionador &lt;&gt; 4 AND seleccionador &lt;&gt; 5">
+                    <then>
+                        <output expression="&quot;Opci&#243;n incorrecta&quot;" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
